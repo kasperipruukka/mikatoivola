@@ -1,0 +1,35 @@
+body {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 22px;
+}
+
+.nav {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 40px;
+}
+
+.nav a {
+    color: #000;
+    text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.331);
+}
+
+.nav .active {
+    opacity: 60%;
+}
+
+#NavAndLogo {
+    margin-top: 30px;
+}
+
+#Logo {
+    width: 30%;
+}
+
+.img-thumbnail {
+    border: 0;
+}
+
+.Title {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5rem;
+}
