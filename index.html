@@ -15,8 +15,8 @@
     <div class="container">
 
         <!-- Navigaatio + Logo -->
-        <div id="NavAndLogo" class="d-inline-flex justify-content-around">
-            <img id="Logo" src="images/logo.png" alt="logo">
+        <div id="navlogo" class="d-inline-flex justify-content-around">
+            <img id="logo" src="images/logo.png" alt="logo">
             <nav class="nav justify-content-end">
                 <a class="nav-link active" href="#">Etusivu</a>
                 <a class="nav-link" href="#">Hinnasto</a>
@@ -25,22 +25,145 @@
         </div>
 
         <!-- Henkilöstö -->
-        <div class="d-flex-column justify-content-end text-center">
-            <h2 class="Title">Henkilöstö</h2>
-            <div>
+        <br />
+        <div class="d-flex-column justify-content-end text-center col-md-12">
+            <h2 class="title">Henkilöstö</h2>
+            <br />
+            <div class="col-md-8">
                 <h3>Mika Toivola</h3>
                 <h4>Suu- ja leukakirurgian erikoishammaslääkäri</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?</p>
+                <p class="fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?</p>
             </div>
-            <div>
+            <div class="col-md-8">
                 <h3>Mari Lindroos</h3>
                 <h4>Hammashoitaja</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?</p>
+                <p class="fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?</p>
             </div>
         </div>
 
         <!-- Palvelut ja Hinnasto -->
-        
+        <br />
+        <h2 class="title text-center">Palvelut ja Hinnasto</h2>
+        <br />
+
+        <div class="d-flex justify-content-center">
+            <table id="hinnastoTable" class="d-grid">
+                <tr>
+                    <th class="b">Toimenpiteet</th>
+                    <th class="b">Hinta</th>
+                    <th class="b">Omavastuuhinta</th>
+                </tr>
+                <tr>
+                    <td>Tarkastus</td>
+                    <td>75 €</td>
+                    <td>59,50 €</td>
+                </tr>
+                <tr>
+                    <td>Panoraamaröntgen</td>
+                    <td>99 €</td>
+                    <td>90 €</td>
+                </tr>
+                <tr>
+                    <td>KKTT-kuvaus (kartiokeilatomografia)</td>
+                    <td>179 €</td>
+                    <td>140 €</td>
+                </tr>
+                <tr>
+                    <td>Hammaskiven poisto</td>
+                    <td>52-113 €</td>
+                    <td>46-100 €</td>
+                </tr>
+                <tr>
+                    <td>Yhden pinnan paikka</td>
+                    <td>90 €</td>
+                    <td>80 €</td>
+                </tr>
+                <tr>
+                    <td>Kahden pinnan paikka</td>
+                    <td>137 €</td>
+                    <td>120 €</td>
+                </tr>
+                <tr>
+                    <td>Kolmen pinnan paikka</td>
+                    <td>158 €</td>
+                    <td>139 €</td>
+                </tr>
+                <tr>
+                    <td>Keraaminen kruunu</td>
+                    <td>850 €</td>
+                    <td>850 €</td>
+                </tr>
+                <tr>
+                    <td>Hampaan poisto</td>
+                    <td>103 €</td>
+                    <td>90 €</td>
+                </tr>
+                <tr>
+                    <td>Vaativa hampaan poisto</td>
+                    <td>153 €</td>
+                    <td>130 €</td>
+                </tr>
+                <tr>
+                    <td>Leikkauksellinen hampaan poisto</td>
+                    <td>344,60 €</td>
+                    <td>290 €</td>
+                </tr>
+                <tr>
+                    <td>Hampaan juurenpään resektio</td>
+                    <td>329,90 €</td>
+                    <td>300 €</td>
+                </tr>
+                <tr>
+                    <td>Hampaan juurenpään resektio</td>
+                    <td>329,90 €</td>
+                    <td>300 €</td>
+                </tr>
+                <tr>
+                    <td>Implanttihammas
+                        <br />
+                         <span id="implanttiInfo">
+                            Sisältää implanttileikkauksen ja implantin päälle tehtävän keraamisen kruunun.
+                         </span> 
+                    </td>
+                    <td>n. 2300 €</td>
+                    <td>n. 2300 €</td>
+                </tr>
+              </table>
+        </div>
+        <div class="text-center">
+            <p class="text-muted fs-6">
+                <br />
+                Hinnat sisältävät jo erikoishammaslääkärikorotuksen.
+                <br />
+                Hintoihin ei myöskään lisätä enää toimisto- tai laskutuslisiä.
+            </p>
+        </div>
+
+        <!-- Ajankohtaista -->
+        <br />
+        <h2 class="title text-center">Ajankohtaista</h2>
+        <br />
+
+        <div id="ajankohtaista" class="col-md-8">
+            <div class="d-flex justify-content-center">
+                <p class="fs-6 text-center">
+                    Vastaanotolla on käytössä modernit välineet ja tarve-aineet sekä myös osaamista niiden käytttöön.
+                    <br /><br />
+                    Röntgenkuvantamisen osalta käytössä on uusi panoraama- ja kktt-laite (kartiokeilatomografia), jolla saa myös kolmiulotteisia leikekuvia.
+                </p>
+            </div>
+
+            <div class="d-inline-flex col-md-12 justify-content d-flex py-4">
+                <span id="uusilaite" class="p-5">UUSI PANORAAMARÖNTGEN-LAITE</span>
+                <img src="images/testi_laite.png" width="200" alt="rontgenlaite.png">
+            </div>
+        </div>
+
+        <!-- Yhteystiedot -->
+        <br />
+        <h2 class="title text-center">Yhteystiedot</h2>
+        <br />
+
 
     </div>
 
