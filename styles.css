@@ -33,11 +33,15 @@ body {
     border: 0;
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
 .title {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.5rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #hinnastoTable {
@@ -69,3 +73,10 @@ body {
     align-self: center;
 }
 
+#contact {
+    margin-bottom: 50px;
+}
+
+#kartta {
+    margin-bottom: 100px;
+}
