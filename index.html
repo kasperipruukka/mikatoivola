@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,9 +19,9 @@
         <div id="navlogo" class="d-inline-flex justify-content-around">
             <img id="logo" src="images/logo.png" alt="logo">
             <nav class="nav justify-content-end">
-                <a class="nav-link active" href="#">Etusivu</a>
-                <a class="nav-link" href="#">Hinnasto</a>
-                <a class="nav-link" href="#">Yhteystiedot</a>
+                <a class="nav-link active fs-5" href="#">Etusivu</a>
+                <a class="nav-link fs-5" href="#">Hinnasto</a>
+                <a class="nav-link fs-5" href="#">Yhteystiedot</a>
             </nav>
         </div>
 
@@ -30,23 +31,33 @@
             <h2 class="title">Henkilöstö</h2>
             <br />
             <div class="col-md-8 d-inline-flex align-items-center align-items-center ">
-                <div class="col-md-6 text-center">
-                    <h1>Kuva</h1>
+                <div class="col-md-5 text-center">
+                    <img class="esittely-kuva" width="200" src="images/mikatoivola_old.png" alt="mikatoivola">
                 </div>
-                <div>
-                    <h3 class="bluetext fs-5">Mika Toivola</h3>
-                    <h4 class="bluetext fs-5">Suu- ja leukakirurgian erikoishammaslääkäri</h4>
-                    <p class="fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?</p>
+                <div class="mb-5">
+                    <h3 class="bluetext">Mika Toivola</h3>
+                    <h4 class="bluetext">Suu- ja leukakirurgian erikoishammaslääkäri</h4>
+                    <p class="fs-6">
+                        Olen valmistunut hammaslääkäriksi v. 2001 Helsingin Yliopistosta, minkä jälkeen olen tehnyt monipuolisesti hammaslääkärin töitä sekä terveyskeskuksessa että yksityisellä. Olen erikoistunut suu- ja leukakirurgiaan v. 2011. Runsaan 5 vuoden erikoistumisjaksosta olen tehnyt noin 4 vuotta Tyksissä eli Turun Yliopistollisessa keskussairaalassa ja viimeisen erikoistumisvuoteni olin Addenbrooksin sairaalassa, Cambridgessa, Englannissa. 
+                        <br /><br />
+                        Erikoistumisajan jälkeen olin vielä jonkin aikaa Tyksin suu- ja leukasairauksien klinikalla, kunnes v. 2015 muutin perheeni kanssa takaisin Raumalle, kotikaupunkiini. 
+                        <br /><br />
+                        Nykyään teen omalla vastaanotollani oikomishoitoa lukuun ottamatta lähes kaikenlaista hammashoitoa. Erityinen mielenkiintoni ja osaamisalueeni on hammasimplantit eli keinojuuret.
+                    </p>
                 </div>
             </div>
             <div class="col-md-8 d-inline-flex align-items-center">
-                <div class="col-md-6 text-center">
-                    <h1>Kuva</h1>
+                <div class="col-md-5 text-center">
+                    <img class="esittely-kuva" width="200" src="images/empty.png" alt="marilindroos">
                 </div>
-                <div>
-                    <h3 class="bluetext fs-5">Mari Lindroos</h3>
-                    <h4 class="bluetext fs-5">Hammashoitaja</h4>
-                    <p class="fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?</p>
+                <div class="mb-5">
+                    <h3 class="bluetext">Mari Lindroos</h3>
+                    <h4 class="bluetext">Hammashoitaja</h4>
+                    <p class="fs-6">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?
+                        <br /><br />
+                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                    </p>
                 </div>
             </div>
         </div>
@@ -141,12 +152,15 @@
               </table>
         </div>
         <div class="text-center">
-            <p class="text-muted fs-6">
-                <br />
+            <p class="text-muted fs-6 mt-3">
                 Hinnat sisältävät jo erikoishammaslääkärikorotuksen.
                 <br />
                 Hintoihin ei myöskään lisätä enää toimisto- tai laskutuslisiä.
             </p>
+        </div>
+
+        <div id="Implantti" class="d-flex justify-content-center">
+            <p class="w-50 fs-5 kalam">"Implantteja voidaan käyttää korvaamaan yksittäisiä tai useampia menetettyjä hampaita tai vaikkapa antamaan lisätukea huonosti pysyvälle kokoproteesille. Luupuutos tai poskiontelon läheisyys on vain hyvin harvoin este implanttien asettamiselle nykyisten keinoluumateriaalien aikana."</p>
         </div>
 
         <!-- Ajankohtaista -->
@@ -165,7 +179,7 @@
 
             <div class="d-inline-flex col-md-12 justify-content-center py-4">
                 <span id="uusilaite" class="bluetext p-5">UUSI PANORAAMARÖNTGEN-LAITE</span>
-                <img src="images/testi_laite.png" width="200" alt="rontgenlaite.png">
+                <img class="bg-light" src="images/empty-circle.png" width="200" alt="rontgenlaite.png">
             </div>
         </div>
 

@@ -3,6 +3,10 @@ body {
     font-size: 22px;
 }
 
+.kalam {
+    font-family: 'Kalam', cursive;
+}
+
 .bluetext {
     color: #0066FF;
 }
@@ -14,19 +18,11 @@ body {
 
 .nav a {
     color: #000;
-    text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.331);
+    text-shadow: 0px 1px 5px rgb(188, 224, 255);
 }
 
 .nav .active {
     opacity: 60%;
-}
-
-#navlogo {
-    margin-top: 30px;
-}
-
-#logo {
-    width: 30%;
 }
 
 .img-thumbnail {
@@ -42,6 +38,31 @@ body {
     font-size: 1.5rem;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.esittely-kuva {
+    box-shadow: 0px 2px 10px rgb(239, 239, 239);
+    border-radius: 50px;
+}
+
+#Implantti {
+    margin-top: 50px;
+}
+
+#Implantti > p {
+    color: #6c757d;
+    background-color: aliceblue;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0px 1px 5px rgb(188, 224, 255);
+}
+
+#navlogo {
+    margin-top: 30px;
+}
+
+#logo {
+    width: 30%;
 }
 
 #hinnastoTable {
