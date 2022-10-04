@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,26 +19,46 @@
         <div id="navlogo" class="d-inline-flex justify-content-around">
             <img id="logo" src="images/logo.png" alt="logo">
             <nav class="nav justify-content-end">
-                <a class="nav-link active" href="#">Etusivu</a>
-                <a class="nav-link" href="#">Hinnasto</a>
-                <a class="nav-link" href="#">Yhteystiedot</a>
+                <a class="nav-link active fs-5" href="#">Etusivu</a>
+                <a class="nav-link fs-5" href="#">Hinnasto</a>
+                <a class="nav-link fs-5" href="#">Yhteystiedot</a>
             </nav>
         </div>
 
         <!-- Henkilöstö -->
         <br />
-        <div class="d-flex-column justify-content-end text-center col-md-12">
+        <div class="d-flex flex-column justify-content-center col-md-12 align-items-center">
             <h2 class="title">Henkilöstö</h2>
             <br />
-            <div class="col-md-8">
-                <h3>Mika Toivola</h3>
-                <h4>Suu- ja leukakirurgian erikoishammaslääkäri</h4>
-                <p class="fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?</p>
+            <div class="col-md-8 d-inline-flex align-items-center align-items-center ">
+                <div class="col-md-5 text-center">
+                    <img class="esittely-kuva" width="200" src="images/mikatoivola_old.png" alt="mikatoivola">
+                </div>
+                <div class="mb-5">
+                    <h3 class="bluetext">Mika Toivola</h3>
+                    <h4 class="bluetext">Suu- ja leukakirurgian erikoishammaslääkäri</h4>
+                    <p class="fs-6">
+                        Olen valmistunut hammaslääkäriksi v. 2001 Helsingin Yliopistosta, minkä jälkeen olen tehnyt monipuolisesti hammaslääkärin töitä sekä terveyskeskuksessa että yksityisellä. Olen erikoistunut suu- ja leukakirurgiaan v. 2011. Runsaan 5 vuoden erikoistumisjaksosta olen tehnyt noin 4 vuotta Tyksissä eli Turun Yliopistollisessa keskussairaalassa ja viimeisen erikoistumisvuoteni olin Addenbrooksin sairaalassa, Cambridgessa, Englannissa. 
+                        <br /><br />
+                        Erikoistumisajan jälkeen olin vielä jonkin aikaa Tyksin suu- ja leukasairauksien klinikalla, kunnes v. 2015 muutin perheeni kanssa takaisin Raumalle, kotikaupunkiini. 
+                        <br /><br />
+                        Nykyään teen omalla vastaanotollani oikomishoitoa lukuun ottamatta lähes kaikenlaista hammashoitoa. Erityinen mielenkiintoni ja osaamisalueeni on hammasimplantit eli keinojuuret.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-8">
-                <h3>Mari Lindroos</h3>
-                <h4>Hammashoitaja</h4>
-                <p class="fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?</p>
+            <div class="col-md-8 d-inline-flex align-items-center">
+                <div class="col-md-5 text-center">
+                    <img class="esittely-kuva" width="200" src="images/empty.png" alt="marilindroos">
+                </div>
+                <div class="mb-5">
+                    <h3 class="bluetext">Mari Lindroos</h3>
+                    <h4 class="bluetext">Hammashoitaja</h4>
+                    <p class="fs-6">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?
+                        <br /><br />
+                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -131,12 +152,15 @@
               </table>
         </div>
         <div class="text-center">
-            <p class="text-muted fs-6">
-                <br />
+            <p class="text-muted fs-6 mt-3">
                 Hinnat sisältävät jo erikoishammaslääkärikorotuksen.
                 <br />
                 Hintoihin ei myöskään lisätä enää toimisto- tai laskutuslisiä.
             </p>
+        </div>
+
+        <div id="Implantti" class="d-flex justify-content-center">
+            <p class="w-50 fs-5 kalam">"Implantteja voidaan käyttää korvaamaan yksittäisiä tai useampia menetettyjä hampaita tai vaikkapa antamaan lisätukea huonosti pysyvälle kokoproteesille. Luupuutos tai poskiontelon läheisyys on vain hyvin harvoin este implanttien asettamiselle nykyisten keinoluumateriaalien aikana."</p>
         </div>
 
         <!-- Ajankohtaista -->
@@ -144,18 +168,18 @@
         <h2 class="title text-center">Ajankohtaista</h2>
         <br />
 
-        <div id="ajankohtaista" class="col-md-8">
+        <div id="ajankohtaista" class="col-md-8 text-center">
             <div class="d-flex justify-content-center">
-                <p class="fs-6 text-center">
+                <p class="fs-6 w-80">
                     Vastaanotolla on käytössä modernit välineet ja tarve-aineet sekä myös osaamista niiden käytttöön.
                     <br /><br />
                     Röntgenkuvantamisen osalta käytössä on uusi panoraama- ja kktt-laite (kartiokeilatomografia), jolla saa myös kolmiulotteisia leikekuvia.
                 </p>
             </div>
 
-            <div class="d-inline-flex col-md-12 justify-content d-flex py-4">
-                <span id="uusilaite" class="p-5">UUSI PANORAAMARÖNTGEN-LAITE</span>
-                <img src="images/testi_laite.png" width="200" alt="rontgenlaite.png">
+            <div class="d-inline-flex col-md-12 justify-content-center py-4">
+                <span id="uusilaite" class="bluetext p-5">UUSI PANORAAMARÖNTGEN-LAITE</span>
+                <img class="bg-light" src="images/empty-circle.png" width="200" alt="rontgenlaite.png">
             </div>
         </div>
 
@@ -164,6 +188,38 @@
         <h2 class="title text-center">Yhteystiedot</h2>
         <br />
 
+
+        <div id="contact" class="d-flex justify-content-center">
+            <div class="px-2 d-flex flex-column">
+                <p class="m-0 text-center">Puhelin</p>
+                <div class="p-3 d-inline-flex flex-row">
+                    <img src="images/phone.png" width="75" alt="phone">
+                    <a class="d-flex align-items-center no-underline" href="tel:+358-44-2397138">044 239 7138</a>
+                </div>
+            </div>
+            <div class="px-2 d-flex flex-column">
+                <p class="m-0 text-center">Osoite</p>
+                <div class="p-3 text-center d-inline-flex">
+                    <img src="images/maps.png" width="75" alt="maps">
+                    <a class="d-flex align-items-center no-underline" target="_blank" href="https://goo.gl/maps/Scb1sT1AAXn6qLKD8">
+                        Pyynpäänkatu 15
+                        <br />
+                        26100 Rauma
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="kartta" class="d-flex justify-content-center">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1925.925003300896!2d21.48824761547806!3d61.13745677178793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46897e14be106205%3A0xc6857278e9eb314e!2sPyynp%C3%A4%C3%A4nkatu%2015%2C%2026100%20Rauma!5e0!3m2!1sfi!2sfi!4v1664895373200!5m2!1sfi!2sfi" 
+                width="600" 
+                height="450"
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
 
     </div>
 
