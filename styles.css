@@ -3,6 +3,10 @@ body {
     font-size: 22px;
 }
 
+.bluetext {
+    color: #0066FF;
+}
+
 .nav {
     font-family: 'Julius Sans One', sans-serif;
     margin-top: 40px;
@@ -32,6 +36,8 @@ body {
 .title {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #hinnastoTable {
@@ -59,7 +65,6 @@ body {
 }
 
 #uusilaite {
-    color: #0066FF;
     font-size: 18px;
     align-self: center;
 }
