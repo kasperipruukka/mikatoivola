@@ -49,6 +49,12 @@ a {
     border-radius: 50px;
 }
 
+#palvelut-btn {
+    width: 125px;
+    padding: 15px 0px 15px 0px;
+    border-radius: 50px;
+}
+
 #scrollBtn {
     opacity: 70%;
     box-shadow: 0px 2px 5px #c5c5c5;
@@ -66,6 +72,14 @@ a {
     border-radius: 50px;
 }
 
+#header {
+    margin-right: 100px;
+}
+
+#header > div {
+    width: 500px;
+}
+
 #scrollBtn:hover {
     background-color: paleturquoise;
 }
@@ -80,14 +94,6 @@ a {
     padding: 40px;
     border-radius: 50px;
     box-shadow: 0px 1px 5px #bce0ff;
-}
-
-#navlogo {
-    margin-top: 30px;
-}
-
-#logo {
-    width: 30%;
 }
 
 #hinnastoTable {
