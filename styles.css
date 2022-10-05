@@ -3,6 +3,10 @@ body {
     font-size: 22px;
 }
 
+a {
+    color: #0077ff;
+}
+
 .kalam {
     font-family: 'Kalam', cursive;
 }
@@ -18,7 +22,7 @@ body {
 
 .nav a {
     color: #000;
-    text-shadow: 0px 1px 5px rgb(188, 224, 255);
+    text-shadow: 0px 1px 5px bce0ff;
 }
 
 .nav .active {
@@ -45,6 +49,27 @@ body {
     border-radius: 50px;
 }
 
+#scrollBtn {
+    opacity: 70%;
+    box-shadow: 0px 2px 5px #c5c5c5;
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#scrollBtn:hover {
+    background-color: paleturquoise;
+}
+
 #Implantti {
     margin-top: 50px;
 }
@@ -54,7 +79,7 @@ body {
     background-color: aliceblue;
     padding: 40px;
     border-radius: 50px;
-    box-shadow: 0px 1px 5px rgb(188, 224, 255);
+    box-shadow: 0px 1px 5px #bce0ff;
 }
 
 #navlogo {
@@ -95,7 +120,7 @@ body {
 }
 
 #contact {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 #kartta {
