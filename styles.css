@@ -40,15 +40,15 @@ a {
 .title {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.5rem;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .esittely-kuva {
-    padding: 20px;
+    padding: 0px 10px 0px 10px;
     background: aliceblue;
     clip-path: circle();
-    width: 250px;
+    width: 200px;
 }
 
 #palvelut-btn {
@@ -116,10 +116,6 @@ a {
 #implanttiInfo {
     font-size: 13px;
     color: #6c757d;
-}
-
-#ajankohtaista {
-    margin: 0 auto;
 }
 
 #uusilaite {
