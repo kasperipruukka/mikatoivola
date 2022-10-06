@@ -17,7 +17,6 @@ a {
 
 .nav {
     font-family: 'Julius Sans One', sans-serif;
-    margin-top: 40px;
 }
 
 .nav a {
@@ -44,17 +43,39 @@ a {
     margin-bottom: 30px;
 }
 
-.esittely-kuva {
+.filter-dropshadow {
+    filter: drop-shadow(-2px 3px 3px #ddd);
+}
+
+.hinnasto-container {
+    background-image: url("images/hinnasto-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clip-path-circle {
     padding: 0px 10px 0px 10px;
-    background: aliceblue;
     clip-path: circle();
     width: 200px;
+    background-color: aliceblue;
+}
+
+#nav-header {
+    background-image: url("images/header-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px;
 }
 
 #palvelut-btn {
-    width: 125px;
+    width: 110px;
     padding: 15px 0px 15px 0px;
     border-radius: 50px;
+    background-color: #fff;
+}
+
+#palvelut-btn:hover {
+    background-color: #0066FF;
 }
 
 #scrollBtn {
@@ -76,6 +97,8 @@ a {
 
 #header {
     margin-right: 100px;
+    padding: 70px;
+    padding-top: 20px;
 }
 
 #header > div {
