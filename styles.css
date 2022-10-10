@@ -31,6 +31,7 @@ body {
     clip-path: circle();
     padding: 10px;
     background-color: #fff;
+    width: 3.5em;
 }
 
 a {
@@ -313,6 +314,15 @@ a {
 
 @media (max-width: 768px) { 
 
+    #logo-puhelin {
+        margin-top: -5px;
+    }
+
+    .nav {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
     .nav,
     .show {
         display: flex;
@@ -321,8 +331,16 @@ a {
     }
 
     .nav a {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .nav > div {
+        align-items: center;
+    }
+
+    #nav-header > div {
+        flex-direction: column !important;
     }
 
     #header {
@@ -331,7 +349,6 @@ a {
         padding: 0;
         margin: 0;
         padding-bottom: 100px;
-        padding-top: 30px;
     }
 
     #header > div {
@@ -434,8 +451,8 @@ a {
     }
 
     .nav a {
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 
     #header {
@@ -444,7 +461,6 @@ a {
         padding: 0;
         margin: 0;
         padding-bottom: 100px;
-        padding-top: 30px;
     }
 
     #header > div {
