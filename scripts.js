@@ -3,7 +3,10 @@ const setLinkActive = (id) => {
     if (!link) return;
 
     const activeLink = document.querySelector('.active');
-    if (!activeLink) return;
+    if (!activeLink) {
+        link.classList.add('active');
+        return;
+    }
     
     activeLink.classList.remove('active');
     link.classList.add('active');
