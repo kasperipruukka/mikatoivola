@@ -112,11 +112,11 @@ a {
     background-color: paleturquoise;
 }
 
-#Implantti {
+#implantti {
     margin-top: 50px;
 }
 
-#Implantti > p {
+#implantti > p {
     color: #6c757d;
     background-color: aliceblue;
     padding: 40px;
@@ -172,6 +172,10 @@ a {
     html {
         font-size: 13px;
         word-break: break-word;
+    }
+
+    .container-fluid {
+        --bs-gutter-x: 0;
     }
 
     .fs-5 {
@@ -256,5 +260,114 @@ a {
     .clip-path-circle {
         clip-path: circle();
         width: 100px;
+    }
+
+    .hinnasto-container {
+        padding: 0px !important;
+    }
+
+    #hinnastoTable > tbody > tr > th, #hinnastoTable > tbody > tr > td {
+        padding: 2px;
+        max-width: 120px;
+    }
+
+    #hinnastoTable {
+        font-size: 10px;
+    }
+
+    #hinnastoTable th {
+        text-align: center;
+        padding: 6px !important;
+    }
+
+    #hinnastoTable td {
+        text-align: center;
+    }
+
+    #implanttiInfo {
+        font-size: 8px;
+    }
+
+    .hinnasto-extra {
+        font-size: 8px !important;
+        padding-bottom: 15px;
+        margin-top: 10px !important;
+    }
+
+    #ajankohtaista-title {
+        margin: 0;
+    }
+
+    #ajankohtaista > div {
+        width: 75% !important;
+    }
+
+    #ajankohtaista .fs-6 {
+        font-size: 10px !important;
+        text-align: center;
+    }
+
+    #uusilaite {
+        font-size: 10px;
+        padding: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    .ajankohtaista-picture {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #implantti {
+        margin-top: 15px !important;
+    }
+
+    #implantti > p {
+        width: 92% !important;
+        padding: 20px;
+    }
+
+    .kalam {
+        font-size: 9px !important;
+    }
+
+    .vasenhammas,
+    .oikeahammas {
+        width: 11px;
+    }
+
+    #yhteystiedot {
+        margin-top: 0px;
+    }
+
+    #contact > div {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    #contact > div > div {
+        align-items: center;
+    }
+    
+    #contact > div > div > svg {
+        width: 15px;
+        stroke-width: 1px;
+    }
+
+    #contact > div > div > p {
+        font-size: 10px !important;
+    }
+
+    .contact-link {
+        font-size: 10px !important;
+    }
+
+    #kartta {
+        margin-bottom: 200px;
+    }
+
+    #kartta iframe {
+        width: 350px;
+        height: 250px;
     }
 }
