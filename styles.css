@@ -3,6 +3,19 @@ body {
     font-size: 22px;
 }
 
+.container-fluid {
+    --bs-gutter-x: 0;
+    max-width: 1300px;
+}
+
+/* LARGE DESKTOP */
+
+.container-fluid {
+    border-left: 2px solid #eef8fd;
+    border-right: 2px solid #eef8fd;
+    box-shadow: 0px 0px 10px #b5e4fb59;
+}
+
 /* DESKTOP */
 
 a {
@@ -58,7 +71,7 @@ a {
 .clip-path-circle {
     padding: 0px 10px 0px 10px;
     clip-path: circle();
-    width: 200px;
+    width: 180px;
     background-color: aliceblue;
 }
 
@@ -86,7 +99,7 @@ a {
     display: none;
     position: fixed;
     bottom: 50px;
-    right: 100px;
+    right: 50px;
     z-index: 99;
     border: none;
     outline: none;
@@ -100,6 +113,7 @@ a {
 #header {
     margin-right: 100px;
     padding: 70px;
+    padding-right: 0px;
     padding-top: 20px;
 }
 
@@ -119,7 +133,8 @@ a {
 #implantti > p {
     color: #6c757d;
     background-color: aliceblue;
-    padding: 40px;
+    width: 50% !important;
+    padding: 20px;
     border-radius: 50px;
     box-shadow: 0px 1px 5px #bce0ff;
 }
@@ -157,25 +172,119 @@ a {
     margin-bottom: 100px;
 }
 
-/* MOBILE */
 
-@media (max-width: 768px) {
+/* SMALL DEVICE */
 
-    #header > div {
-        width: 250px;
+@media (max-width: 950px) {
+
+    #header {
+        margin-right: 0;
+        padding-bottom: 100px;
+    }
+
+    .fs-5 {
+        font-size: 17px !important;
+    }
+
+    .fs-6 {
+        font-size: 15px !important;
+    }
+
+    #palvelut-btn {
+        width: 90px;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .title {
+        font-size: 1.25rem;
+        margin-top: -25px;
+        margin-bottom: 20px;
+    }
+
+    #yhteystiedot {
+        margin-top: 0px;
+    }
+
+    #ajankohtaista-title {
+        margin: 0;
+    }
+
+    .hlokunta-info .fs-5 {
+        font-size: 15px !important;
+    }
+
+    .hlokunta-info .fs-6 {
+        margin-top: -25px;
+        text-align: start;
+        font-size: 12px !important;
+    }
+
+    .clip-path-circle {
+        clip-path: circle();
+        width: 125px;
+    }
+
+    #hinnastoTable > tbody > tr > th, #hinnastoTable > tbody > tr > td {
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 250px;
+    }
+
+    #hinnastoTable {
+        font-size: 14px;
+    }
+
+    #hinnastoTable th {
+        text-align: start;
+        padding: 10px !important;
+    }
+
+    #hinnastoTable td {
+        text-align: start;
+    }
+
+    .hinnasto-extra {
+        font-size: 12px !important;
+        padding-bottom: 15px;
+        margin-top: 10px !important;
+    }
+
+    #uusilaite {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    #implantti {
+        margin-top: 15px !important;
+    }
+
+    #implantti > p {
+        width: 60% !important;
+        padding: 20px;
+    }
+
+    .kalam {
+        font-size: 14px !important;
+    }
+
+    .vasenhammas,
+    .oikeahammas {
+        width: 20px;
+    }
+
+    #scrollBtn {
+        right: 40px;
     }
 
 }
 
-@media (max-width: 992px) { 
+/* MOBILE */
+
+@media (max-width: 768px) { 
 
     html {
         font-size: 13px;
         word-break: break-word;
-    }
-
-    .container-fluid {
-        --bs-gutter-x: 0;
     }
 
     .fs-5 {
@@ -208,6 +317,7 @@ a {
         align-items: center;
         display: flex;
         flex-direction: column;
+        width: 250px;
     }
 
     #header > div > .fs-6 {
