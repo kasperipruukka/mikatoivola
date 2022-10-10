@@ -3,6 +3,8 @@ body {
     font-size: 22px;
 }
 
+/* DESKTOP */
+
 a {
     color: #0077ff;
 }
@@ -103,6 +105,7 @@ a {
 
 #header > div {
     width: 500px;
+    word-break: break-word;
 }
 
 #scrollBtn:hover {
@@ -152,4 +155,106 @@ a {
 
 #kartta {
     margin-bottom: 100px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    #header > div {
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 992px) { 
+
+    html {
+        font-size: 13px;
+        word-break: break-word;
+    }
+
+    .fs-5 {
+        font-size: 15px !important;
+    }
+
+    .fs-6 {
+        font-size: 13px !important;
+    }
+
+    #logo {
+        width: 150px;
+    }
+
+    #logo-puhelin svg {
+        width: 12px;
+    }
+
+    #header {
+        align-items: center !important;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 100px;
+        padding-top: 30px;
+    }
+
+    #header > div {
+        text-align: center !important;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header > div > .fs-6 {
+        margin-top: 5px;
+        text-align: start;
+        font-size: 10px !important;
+    }
+
+    #palvelut-btn {
+        width: 90px;
+        padding: 13px 0px 13px 0px;
+    }
+
+    .title {
+        font-size: 1rem;
+        margin-top: -45px;
+        margin-bottom: 20px;
+    }
+
+    .hlokunta {
+        flex-direction: column;
+        padding: 30px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .hlokunta-info {
+        margin: 0;
+    }
+
+    .hlokunta-info h3 {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .hlokunta-info h4 {
+        text-align: center;
+    }
+
+    .hlokunta-info .fs-5 {
+        font-size: 13px !important;
+    }
+
+    .hlokunta-info .fs-6 {
+        margin-top: -25px;
+        text-align: start;
+        font-size: 10px !important;
+    }
+
+    .clip-path-circle {
+        clip-path: circle();
+        width: 100px;
+    }
 }
