@@ -27,10 +27,17 @@
                         </a>
                     </div>
                 </div>
-                <nav class="mt-4 nav justify-content-end">
-                    <a id="ajankohtaista-link" class="nav-link fs-6" href="#ajankohtaista" onclick="setLinkActive('ajankohtaista-link')">Ajankohtaista</a>
-                    <a id="hinnasto-link" class="nav-link fs-6" href="#hinnasto" onclick="setLinkActive('hinnasto-link')">Hinnasto</a>
-                    <a id="yhteystiedot-link" class="nav-link fs-6" href="#yhteystiedot" onclick="setLinkActive('yhteystiedot-link')">Yhteystiedot</a>
+                <nav class="nav navbar navbar-expand-md justify-content-end">
+                    <div class="d-inline-flex">
+                        <div class="navbar-collapse collapse" id="nav-items">
+                            <a id="ajankohtaista-link" class="nav-link fs-6" href="#ajankohtaista" onclick="setLinkActive('ajankohtaista-link')">Ajankohtaista</a>
+                            <a id="hinnasto-link" class="nav-link fs-6" href="#hinnasto" onclick="setLinkActive('hinnasto-link')">Hinnasto</a>
+                            <a id="yhteystiedot-link" class="nav-link fs-6" href="#yhteystiedot" onclick="setLinkActive('yhteystiedot-link')">Yhteystiedot</a>
+                        </div>
+                        <a class="border-0 navbar-toggler filter-dropshadow" type="button" data-bs-toggle="collapse" data-bs-target="#nav-items" aria-expanded="false" aria-controls="nav-items">
+                            <img id="nav-btn" src="/images/nav-btn.png" alt="hammas" width="50">
+                        </a>
+                    </div>
                 </nav>
             </div>
     
@@ -265,13 +272,15 @@
             </iframe>
         </div>
 
+        <br /> <br />
+
     </div>
 
     <button onclick="scrollToTop()" id="scrollBtn">
         <?xml version="1.0" ?><svg width="40" data-name="Layer 1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.71,11.29l-5-5a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21l-5,5a1,1,0,0,0,1.42,1.42L11,9.41V17a1,1,0,0,0,2,0V9.41l3.29,3.3a1,1,0,0,0,1.42,0A1,1,0,0,0,17.71,11.29Z" fill="#0066FF"/></svg>
     </button>
 
-    <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

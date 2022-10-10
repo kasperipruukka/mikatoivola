@@ -16,7 +16,22 @@ body {
     box-shadow: 0px 0px 10px #b5e4fb59;
 }
 
+.fs-5 {
+    font-size: 16px !important;
+}
+
+.fs-6 {
+    font-size: 14px !important;
+}
+
 /* DESKTOP */
+
+
+#nav-btn {
+    clip-path: circle();
+    padding: 10px;
+    background-color: #fff;
+}
 
 a {
     color: #0077ff;
@@ -53,8 +68,8 @@ a {
 
 .title {
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 1.5rem;
-    margin-top: 30px;
+    font-size: 1.25rem;
+    margin-top: 40px;
     margin-bottom: 30px;
 }
 
@@ -75,11 +90,19 @@ a {
     background-color: aliceblue;
 }
 
+#henkilosto {
+    margin-top: 0px;
+}
+
 #nav-header {
     background-image: url("images/header-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -50px;
+}
+
+#nav-header > div > div {
+    justify-content: center;
 }
 
 #palvelut-btn {
@@ -94,7 +117,7 @@ a {
 }
 
 #scrollBtn {
-    opacity: 70%;
+    opacity: 60%;
     box-shadow: 0px 2px 5px #c5c5c5;
     display: none;
     position: fixed;
@@ -112,9 +135,10 @@ a {
 
 #header {
     margin-right: 100px;
-    padding: 70px;
+    padding-left: 70px;
     padding-right: 0px;
     padding-top: 20px;
+    padding-bottom: 100px;
 }
 
 #header > div {
@@ -141,13 +165,13 @@ a {
 
 #hinnastoTable {
     display: grid;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #hinnastoTable > tbody > tr > th,
 #hinnastoTable > tbody > tr > td {
     padding: 2px 30px;
-    max-width: 350px;
+    max-width: 300px;
 }
 
 #hinnastoTable > tbody > tr {
@@ -160,7 +184,7 @@ a {
 }
 
 #uusilaite {
-    font-size: 18px;
+    font-size: 16px;
     align-self: center;
 }
 
@@ -168,14 +192,21 @@ a {
     margin-bottom: 25px;
 }
 
-#kartta {
-    margin-bottom: 100px;
-}
-
-
-/* SMALL DEVICE */
+/* AVERAGE MOBILE DEVICE */
 
 @media (max-width: 950px) {
+
+    #logo {
+        width: 180px;
+    }
+
+    #logo-puhelin svg {
+        width: 16px;
+    }
+
+    .nav a {
+        font-size: 13px !important;
+    }
 
     #header {
         margin-right: 0;
@@ -278,9 +309,108 @@ a {
 
 }
 
-/* MOBILE */
+/* SMALL DEVICE */
 
 @media (max-width: 768px) { 
+
+    .nav,
+    .show {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    .nav a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #header {
+        align-items: center !important;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 100px;
+        padding-top: 30px;
+    }
+
+    #header > div {
+        text-align: center !important;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .hlokunta {
+        flex-direction: column;
+        padding: 30px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .hlokunta-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .hlokunta-info h3 {
+        margin-top: 15px;
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .hlokunta-info h4 {
+        text-align: center;
+        max-width: 80%;
+    }
+
+    .hlokunta-info .fs-5 {
+        font-size: 15px !important;
+        max-width: 80%;
+    }
+
+    .hlokunta-info .fs-6 {
+        margin-top: -25px;
+        text-align: start;
+        font-size: 13px !important;
+        max-width: 80%;
+    }
+
+    .clip-path-circle {
+        clip-path: circle();
+        width: 120px;
+    }
+
+    #implantti {
+        margin-top: 15px !important;
+    }
+
+    #implantti > p {
+        font-size: 8px;
+        padding: 25px;
+    }
+
+    .kalam {
+        font-size: 12px !important;
+    }
+
+    #yhteystiedot {
+        margin-top: 20px;
+    }
+
+    #kartta {
+        margin-bottom: 220px;
+    }
+
+}
+
+
+/* MINI DEVICE */
+
+@media (max-width: 680px) { 
 
     html {
         font-size: 13px;
@@ -301,6 +431,11 @@ a {
 
     #logo-puhelin svg {
         width: 12px;
+    }
+
+    .nav a {
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 
     #header {
@@ -433,7 +568,7 @@ a {
     }
 
     #implantti > p {
-        width: 92% !important;
+        width: 60% !important;
         padding: 20px;
     }
 
@@ -472,12 +607,8 @@ a {
         font-size: 10px !important;
     }
 
-    #kartta {
-        margin-bottom: 200px;
-    }
-
     #kartta iframe {
-        width: 350px;
-        height: 250px;
+        width: 400px;
+        height: 300px;
     }
 }
