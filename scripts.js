@@ -1,3 +1,17 @@
+const setLinkActive = (id) => {
+    const link = document.getElementById(id);
+    if (!link) return;
+
+    const activeLink = document.querySelector('.active');
+    if (!activeLink) {
+        link.classList.add('active');
+        return;
+    }
+    
+    activeLink.classList.remove('active');
+    link.classList.add('active');
+} 
+
 const toggleBtnVisibility = (btnId) => {
     const btn = document.getElementById(btnId);
     if (!btn) return;
