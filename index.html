@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Julius+Sans+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,11 +18,19 @@
 
         <!-- Navigaatio + Logo -->
         <div id="nav-header">
-            <div class="w-100 mt-3 d-inline-flex justify-content-around">
+            <div class="w-100 mt-3 d-inline-flex justify-content-evenly">
                 <div class="d-flex flex-column align-items-center">
-                    <img id="logo" width="250" src="images/logo.png" alt="logo">
+                    <div class="d-inline-flex">
+                        <img id="vasen-logo" height="90" src="images/vasen-logo.png" alt="logo">
+                        <h1 id="logo" class="mt-4 d-flex align-items-end">
+                            SUU -JA LEUKAKIRURGIAN<br />
+                            ERIKOISHAMMASLÄÄKÄRI<br />
+                            MIKA TOIVOLA
+                        </h1>
+                        <img id="oikea-logo" height="90" src="images/oikea-logo.png" alt="logo">
+                    </div>
                     <div id="logo-puhelin" class="d-flex flex-row fs-6">
-                        <?xml version="1.0" ?><svg class="feather feather-phone" fill="none" height="30" stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <?xml version="1.0" ?><svg class="feather feather-phone" fill="none" height="30" stroke="#0066FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         <a class="ps-2 d-flex align-items-center no-underline" href="tel:+358-44-2397138">
                             044 239 7138
                         </a>
@@ -30,7 +39,6 @@
                 <nav class="nav navbar navbar-expand-md justify-content-end">
                     <div class="d-inline-flex">
                         <div class="navbar-collapse collapse" id="nav-items">
-                            <a id="ajankohtaista-link" class="nav-link fs-6" href="#ajankohtaista" onclick="setLinkActive('ajankohtaista-link')">Ajankohtaista</a>
                             <a id="hinnasto-link" class="nav-link fs-6" href="#hinnasto" onclick="setLinkActive('hinnasto-link')">Hinnasto</a>
                             <a id="yhteystiedot-link" class="nav-link fs-6" href="#yhteystiedot" onclick="setLinkActive('yhteystiedot-link')">Yhteystiedot</a>
                         </div>
@@ -62,14 +70,19 @@
         <div class="mt-3 d-flex flex-column justify-content-center col-md-12 align-items-center">
             <h2 id="henkilosto" class="title">Henkilöstö</h2>
             <br />
-            <div class="col-md-8 d-inline-flex hlokunta">
-                <div class="col-md-5 text-center filter-dropshadow">
-                    <img class="clip-path-circle" src="images/mikatoivola_old.png" alt="mikatoivola">
-                </div>
-                <div class="mb-5 hlokunta-info">
-                    <h3 class="bluetext fs-5">Mika Toivola</h3>
-                    <h4 class="bluetext fs-5">Suu- ja leukakirurgian erikoishammaslääkäri</h4>
-                    <br />
+            <div class="col-md-5 d-flex hlokunta">
+                <div class="hlokunta-info">
+                    <div class="d-inline-flex pic-text">
+                        <div class="me-3 filter-dropshadow">
+                            <img class="clip-path-circle" src="images/mikatoivola_old.png" alt="mikatoivola">
+                        </div>
+                        <h3 class="d-flex align-items-center bluetext fs-5">
+                            Mika Toivola
+                            <br />
+                            Suu- ja leukakirurgian erikoishammaslääkäri
+                        </h3>
+                    </div>
+                    <br /><br />
                     <p class="fs-6">
                         Olen valmistunut hammaslääkäriksi v. 2001 Helsingin Yliopistosta, minkä jälkeen olen tehnyt monipuolisesti hammaslääkärin töitä sekä terveyskeskuksessa että yksityisellä. Olen erikoistunut suu- ja leukakirurgiaan v. 2011. Runsaan 5 vuoden erikoistumisjaksosta olen tehnyt noin 4 vuotta Tyksissä eli Turun Yliopistollisessa keskussairaalassa ja viimeisen erikoistumisvuoteni olin Addenbrooksin sairaalassa, Cambridgessa, Englannissa. 
                         <br /><br />
@@ -79,15 +92,16 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-8 d-inline-flex hlokunta">
-                <div class="col-md-5 text-center filter-dropshadow">
-                    <img class="clip-path-circle" src="images/empty.png" alt="marilindroos">
-                </div>
+            <br />
+            <div class="col-md-5 d-flex hlokunta">
                 <div class="mb-5 hlokunta-info">
-                    <h3 class="bluetext fs-5">Mari Lindroos</h3>
-                    <h4 class="bluetext fs-5">Hammashoitaja</h4>
-                    <br />
-                    <p class="fs-6">
+                    <h3 class="bluetext fs-5">
+                        Mari Lindroos
+                        <br />
+                        Hammashoitaja
+                    </h3>
+                    <br /><br />
+                    <p class="fs-6 text-start second-hlokunta">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?
                         <br /><br />
                         Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
@@ -113,6 +127,11 @@
                         <td>Tarkastus</td>
                         <td>75 €</td>
                         <td>59,50 €</td>
+                    </tr>
+                    <tr>
+                        <td>Hammasröntgen</td>
+                        <td>38 €</td>
+                        <td>32 €</td>
                     </tr>
                     <tr>
                         <td>Panoraamaröntgen</td>
@@ -145,6 +164,16 @@
                         <td>139 €</td>
                     </tr>
                     <tr>
+                        <td>Hampaan juurikanavien avaus</td>
+                        <td>125-200 €</td>
+                        <td>115-181 €</td>
+                    </tr>
+                    <tr>
+                        <td>Hampaan juuren täyttö</td>
+                        <td>109-189 €</td>
+                        <td>100-170 €</td>
+                    </tr>
+                    <tr>
                         <td>Keraaminen kruunu</td>
                         <td>850 €</td>
                         <td>850 €</td>
@@ -170,9 +199,6 @@
                         <td>300 €</td>
                     </tr>
                     <tr>
-                        <td>Hampaan juurenpään resektio</td>
-                        <td>329,90 €</td>
-                        <td>300 €</td>
                     </tr>
                     <tr>
                         <td>Implanttihammas
@@ -195,25 +221,15 @@
             </div>
         </div>
 
-        <!-- Ajankohtaista -->
-        <br />
-        <h2 id="ajankohtaista-title" class="title text-center">Ajankohtaista</h2>
-        <br />
-
-        <div id="ajankohtaista" class="d-flex justify-content-center flex-column align-items-center">
-            <div class="d-flex justify-content-center w-50">
+        <div id="yleista" class="mt-5 d-flex justify-content-center flex-column align-items-center">
+            <div class="d-flex justify-content-center">
                 <p class="fs-6">
                     Vastaanotolla on käytössä modernit välineet ja tarve-aineet sekä myös osaamista niiden käyttöön.
                     <br /><br />
                     Röntgenkuvantamisen osalta käytössä on uusi panoraama- ja kktt-laite (kartiokeilatomografia), jolla saa myös kolmiulotteisia leikekuvia.
+                    <br /> <br />
+                    Vastaanoton edessä kadulla on vapaita parkkipaikkoja.
                 </p>
-            </div>
-
-            <div class="d-inline-flex py-4 ajankohtaista-picture">
-                <span id="uusilaite" class="bluetext pe-4">UUSI PANORAAMARÖNTGEN-LAITE</span>
-                <div class="filter-dropshadow">
-                    <img class="clip-path-circle" src="images/empty.png" alt="rontgenlaite.png">
-                </div>
             </div>
         </div>
 
@@ -272,7 +288,7 @@
             </iframe>
         </div>
 
-        <br /> <br />
+        <br />
 
     </div>
 
