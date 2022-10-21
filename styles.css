@@ -27,11 +27,11 @@ body {
 }
 
 .fs-5 {
-    font-size: 16px !important;
+    font-size: 18px !important;
 }
 
 .fs-6 {
-    font-size: 14px !important;
+    font-size: 16px !important;
 }
 
 /* DESKTOP */
@@ -98,7 +98,7 @@ a {
 .clip-path-circle {
     padding: 0px 10px 0px 10px;
     clip-path: circle();
-    width: 120px;
+    width: 130px;
     background-color: aliceblue;
 }
 
@@ -419,7 +419,7 @@ a {
     }
 
     #implantti > p {
-        font-size: 8px;
+        font-size: 12px;
         padding: 25px;
     }
 
@@ -483,7 +483,7 @@ a {
     #header > div > .fs-6 {
         margin-top: 5px;
         text-align: start;
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
 
     #palvelut-btn {
@@ -523,7 +523,7 @@ a {
 
     .hlokunta-info .fs-6 {
         text-align: start;
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
 
     .clip-path-circle {
@@ -541,25 +541,25 @@ a {
     }
 
     #hinnastoTable {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     #implanttiInfo {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .hinnasto-extra {
-        font-size: 8px !important;
+        font-size: 12px !important;
         padding-bottom: 15px;
         margin-top: 10px !important;
     }
 
     #yleista .fs-6 {
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
 
     #uusilaite {
-        font-size: 10px;
+        font-size: 12px;
         padding: 0 !important;
         margin-bottom: 10px;
     }
@@ -574,7 +574,7 @@ a {
     }
 
     .kalam {
-        font-size: 9px !important;
+        font-size: 12px !important;
     }
 
     .vasenhammas,
@@ -601,11 +601,11 @@ a {
     }
 
     #contact > div > div > p {
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
 
     .contact-link {
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
 
     #kartta iframe {

@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161970497-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-161970497-1');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mika Toivola</title>
+    <meta name="description" content="Mika Toivola on Raumalla toimiva suu -ja leukakirurgian erikoishammaslääkäri. Hammashoitoa vankalla kokemuksella vuodesta toiseen!">
+    <meta name="keywords" content="Hammashoito, Hammaslääkäri, Rauma, Hammas, Implantti, hammastarkastus">
+    <title>Mika Toivola | Erikoishammaslääkäri | Rauma</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Julius+Sans+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -42,8 +54,8 @@
                             <a id="hinnasto-link" class="nav-link fs-6" href="#hinnasto" onclick="setLinkActive('hinnasto-link')">Hinnasto</a>
                             <a id="yhteystiedot-link" class="nav-link fs-6" href="#yhteystiedot" onclick="setLinkActive('yhteystiedot-link')">Yhteystiedot</a>
                         </div>
-                        <a class="border-0 navbar-toggler filter-dropshadow" type="button" data-bs-toggle="collapse" data-bs-target="#nav-items" aria-expanded="false" aria-controls="nav-items">
-                            <img id="nav-btn" src="/images/nav-btn.png" alt="hammas" width="50">
+                        <a href="#" class="border-0 navbar-toggler filter-dropshadow" type="button" data-bs-toggle="collapse" data-bs-target="#nav-items" aria-expanded="false" aria-controls="nav-items">
+                            <img id="nav-btn" src="/images/nav-btn.png" alt="hammas" width="88.9">
                         </a>
                     </div>
                 </nav>
@@ -74,7 +86,7 @@
                 <div class="hlokunta-info">
                     <div class="d-inline-flex pic-text">
                         <div class="me-3 filter-dropshadow">
-                            <img class="clip-path-circle" src="images/mikatoivola_old.png" alt="mikatoivola">
+                            <img class="clip-path-circle" src="images/mikatoivola.png" alt="mikatoivola">
                         </div>
                         <h3 class="d-flex align-items-center bluetext fs-5">
                             Mika Toivola
@@ -100,12 +112,6 @@
                         <br />
                         Hammashoitaja
                     </h3>
-                    <br /><br />
-                    <p class="fs-6 text-start second-hlokunta">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolor fugiat a natus molestiae, dicta temporibus voluptas error quibusdam placeat accusantium autem fuga animi facilis dolores debitis non consectetur atque?
-                        <br /><br />
-                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-                    </p>
                 </div>
             </div>
         </div>
@@ -224,11 +230,11 @@
         <div id="yleista" class="mt-5 d-flex justify-content-center flex-column align-items-center">
             <div class="d-flex justify-content-center">
                 <p class="fs-6">
-                    Vastaanotolla on käytössä modernit välineet ja tarve-aineet sekä myös osaamista niiden käyttöön.
+                    Vastaanoton edessä kadulla on vapaita parkkipaikkoja.
                     <br /><br />
                     Röntgenkuvantamisen osalta käytössä on uusi panoraama- ja kktt-laite (kartiokeilatomografia), jolla saa myös kolmiulotteisia leikekuvia.
-                    <br /> <br />
-                    Vastaanoton edessä kadulla on vapaita parkkipaikkoja.
+                    <br /><br />
+                    Vastaanotolla on käytössä modernit välineet ja tarve-aineet sekä myös osaamista niiden käyttöön.
                 </p>
             </div>
         </div>
@@ -284,7 +290,8 @@
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
+                referrerpolicy="no-referrer-when-downgrade"
+                title="map">
             </iframe>
         </div>
 
@@ -292,7 +299,7 @@
 
     </div>
 
-    <button onclick="scrollToTop()" id="scrollBtn">
+    <button onclick="scrollToTop()" id="scrollBtn" name="scrollBtn">
         <?xml version="1.0" ?><svg width="40" data-name="Layer 1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.71,11.29l-5-5a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21l-5,5a1,1,0,0,0,1.42,1.42L11,9.41V17a1,1,0,0,0,2,0V9.41l3.29,3.3a1,1,0,0,0,1.42,0A1,1,0,0,0,17.71,11.29Z" fill="#0066FF"/></svg>
     </button>
 
