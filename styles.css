@@ -292,6 +292,7 @@ a {
     #hinnastoTable th {
         text-align: start;
         padding: 10px !important;
+        word-break: normal;
     }
 
     #hinnastoTable td {
