@@ -184,7 +184,8 @@ a {
 }
 
 #implantti {
-    margin-top: 50px;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 #implantti > p {
@@ -193,6 +194,7 @@ a {
     padding: 30px;
     border-radius: 50px;
     box-shadow: 0px 1px 5px #bce0ff;
+    font-size: 15px !important;
 }
 
 #hinnastoTable {
@@ -211,7 +213,6 @@ a {
 }
 
 #implanttiInfo {
-    font-size: 13px;
     color: #6c757d;
 }
 
@@ -436,10 +437,6 @@ a {
         margin-top: 15px !important;
     }
 
-    #implantti > p {
-        font-size: 12px;
-    }
-
     .kalam {
         font-size: 12px !important;
     }
@@ -583,10 +580,12 @@ a {
 
     #implantti {
         margin-top: 15px !important;
+        max-width: 70% !important;
     }
 
     #implantti > p {
         padding: 20px;
+        font-size: 13px !important;
     }
 
     .kalam {
